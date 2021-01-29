@@ -1,11 +1,12 @@
 '''
 Project 1,  Due Date: May 1
 '''
-print('hello world')
+
 
 idea1 = 'game'    #https://wiki.python.org/moin/GameProgramming
-
 idea2 = 'Math tools'    
 idea3 = 'Physic tools'
+
+
 idea4 = 'stock stimulator'    #https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_model
 
