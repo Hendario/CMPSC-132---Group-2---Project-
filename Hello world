@@ -1,1 +1,6 @@
 print('hello world')
+
+idea1 = 'game'
+idea2 = 'Math tools'
+idea3 = 'Physic tools'
+idea4 = 'stock stimulator'
