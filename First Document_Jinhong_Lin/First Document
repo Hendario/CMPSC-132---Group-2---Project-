@@ -1,0 +1,39 @@
+ 
+For the project entails, I think our problem is trying to have a website that can let us download all the daily stock information.
+And so we can transfer the data from excel to python. And then start calculating all the datas, and find a peak point, 
+first taking an educated guess to predict if the stock will go up & down. (Later we must use data to do this instead of guess, but anyway, just started)
+We may need to pip many packages, and so we can get all the datas and transfer all the data into excel, so we can manage it more easily, and do later actions.
+ 
+Team members:
+Ishan Akhouri, Shawn Glaser, Namkyu Lee, and Jinhong Lin.
+Github:(This now is public, so everyone can see)
+https://github.com/Hendario/CMPSC-132---Group-2---Project-Stock-simulator
+ 
+Language: Python
+Problem:
+-How to use all those packages, that’s something we need to spend more time to learn,  and how to plug them in our project correctly.
+-Where should we get the data from? (can we trust this web?)
+-How do we display all the datas at once?
+Libraries: (That’s the packages that I think we might need to use for now)
+import xlrd     #to transfer excel data into python
+import matplotlib       #to display all the data into graph so we can manage or see data more clearly
+import numpy        #easier to manage all the data, and structure all the block
+import requests     #request for the data
+import multiprocessing      #transfer data more effectively
+import pandas       #return the data and save it as excel file
+ 
+ 
+ 
+Immediate goals:
+Find a trustful source to download the data, and based on 1 stock, try to get it data, and try to predict 1 stock first.
+Long term goals:
+Try to predict as accurately as possible for most of the stocks that’s publicly available to buy.
+Immediate questions:
+Which source is considered a trustworthy source?
+How to transfer all the data from a web into our local machine?
+How to make transfer speed more efficient?
+How to manage that huge amount of datas at once?
+How to display a stock’s data in a graph?
+ 
+ 
+
