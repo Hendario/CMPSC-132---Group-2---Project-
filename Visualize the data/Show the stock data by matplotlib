@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 date = []
 price = []
+price1 = []
 def print_data(filename):
     with open(filename, newline='') as csvfile:
         data = csv.DictReader(csvfile)
@@ -12,7 +13,8 @@ def print_data(filename):
         for row in data:
             date.append(row['Date'])
             price.append(row['Close/Last'])
-            print(row['Date'],row['Close/Last'])
+            price1.append(row['Open'])
+            print(row['Date'],row['Close/Last'],row['Open'])
     return
 
 def price_to_float(price):
@@ -23,15 +25,39 @@ def price_to_float(price):
     return new_price
 
 def show_data(date,price):
-    plt.plot(date, price, 'ro')
+    plt.plot(date, price, 'r')
+    plt.xlabel("Dates")
+    plt.ylabel("Prices")
     plt.show()
 
-file = 'apple.csv'
+def show_both_data(date,price1,price2):
+    plt.plot(date, price1, 'r',label = 'close')
+    plt.plot(date,price2, 'b',label = 'open')
+    plt.xlabel("Dates")
+    plt.ylabel("Prices")
+    plt.show()
+
+def predict_upordown(price1,price2):
+    if sum(price1) > sum(price2):
+        print('[↑]The price is going Up')
+    else:
+        print('[↓]The price is going down')
+
+file = 'apple_1m.csv'       #The data that you want to visualize
 print_data(file)
-new_price = price_to_float(price)
+
 print(date)
 print(price)
-print(len(date))
-print(len(price))
+print(price1)
+#print(len(date))
+#print(len(price))
+#print(len(price1))
+new_price = price_to_float(price)
+new_price1 = price_to_float(price1)
+print(new_price)
+print(new_price1)
 
-show_data(date,new_price)
+show_data(date,new_price)       #Show the close data
+show_data(date,new_price1)      #Show the open data
+show_both_data(date,new_price,new_price1)
+predict_upordown(new_price,new_price1)
