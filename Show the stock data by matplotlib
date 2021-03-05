@@ -1,0 +1,37 @@
+import csv
+import numpy as np
+import matplotlib.pyplot as plt
+
+date = []
+price = []
+def print_data(filename):
+    with open(filename, newline='') as csvfile:
+        data = csv.DictReader(csvfile)
+        print("A single stock datas")
+        print("---------------------------------")
+        for row in data:
+            date.append(row['Date'])
+            price.append(row['Close/Last'])
+            print(row['Date'],row['Close/Last'])
+    return
+
+def price_to_float(price):
+    new_price = []
+    for i in price:
+        a = i.replace('$','')
+        new_price.append(float(a))
+    return new_price
+
+def show_data(date,price):
+    plt.plot(date, price, 'ro')
+    plt.show()
+
+file = 'apple.csv'
+print_data(file)
+new_price = price_to_float(price)
+print(date)
+print(price)
+print(len(date))
+print(len(price))
+
+show_data(date,new_price)
