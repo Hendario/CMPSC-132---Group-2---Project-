@@ -6,6 +6,9 @@ python 3
 
 windows 10
 
+Have juypter notebook or sometthing else that can open the .ipynb file
+(if you don't have it, here's the link: https://docs.anaconda.com/anaconda/install/windows/)
+
 packages :
 from pandas_datareader import data as pdr
 import pandas as pd
