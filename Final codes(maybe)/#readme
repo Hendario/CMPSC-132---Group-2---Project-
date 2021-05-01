@@ -1,8 +1,9 @@
 readme
 
 STOCK PREDICTION PROGRAM
+This is a tool that can predict any stock in stock market, and can help you to get benefit from it. 
 
-python 3
+python 3 or above
 
 windows 10
 
@@ -21,3 +22,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 input stock code/ticker into variable 'code' (code='AAPL' for example), program will predict possible stock values using previous stock data
+Don't forgot to change the path to your machine's folder path, so everything is running and working...
+
+That's it for the Readme, enjoy the using of our product!
