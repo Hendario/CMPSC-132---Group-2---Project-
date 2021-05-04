@@ -1,0 +1,16 @@
+Stock predictor 
+
+This is a tool that can predict any stock in stock market, and can help you to get benefit from it. 
+
+How to run:
+
+1. Must be python 3.6 or above, so it can be running.
+2.Have juypter notebook or sometthing else that can open the .ipynb file
+(if you don't have it, here's the link: https://docs.anaconda.com/anaconda/install/windows/)
+3.Before you start running the code, try to 
+pip install all the following:
+pandas, yahoo finance, matplotlib, math, numpy, sklearn
+
+4.You can easily change the code to the stock that you want to predict, and you also need to change the path to any where in your laptop, so the datas can be save in your machine, so it can start running and load datas from your machine. 
+
+5.That's it for the Readme, enjoy the using of our product!
